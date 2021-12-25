@@ -5,6 +5,7 @@ const headerConfig = {
     imgURL: 'https://www.github.com/DesignSystemsOSS.png',
     title: 'Plain UI Kit',
     route: '/',
+    logoShape: 'circle'
   },
   options: [
     { type: 'link', name: 'Documentation', route: '/docs' },

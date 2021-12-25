@@ -7,7 +7,8 @@ export default function Header({headerConfiguration}) {
         url: headerConfiguration.logo.imgURL,
         title: headerConfiguration.logo.title,
         route: headerConfiguration.logo.route,
-        className: (headerConfiguration.logo.className ? headerConfiguration.logo.className : '')
+        className: (headerConfiguration.logo.className ? headerConfiguration.logo.className : ''),
+        shape: (headerConfiguration.logo.logoShape ? headerConfiguration.logo.logoShape : '')
     };
     let styleConfiguration = {
         backgroundColor: headerConfiguration.themeConfig.backgroundColor,
@@ -29,7 +30,7 @@ export default function Header({headerConfiguration}) {
                 <div className="logo-title-content-wrapper">
                     <React.Fragment>
                         <img src={logoData.url} alt={logoData.title}
-                            className={`header-logo`}
+                            className={`header-logo ` + `header-logo__${logoData.shape}`}
                         />
                     </React.Fragment>
                 </div>
@@ -37,10 +38,14 @@ export default function Header({headerConfiguration}) {
                     {headerOptionsRef.map((option, index) => {
                         if (option.type === 'link') {
                             if (option.route === undefined) {
-                                return <p className="header-option__text">{option.name}</p>
+                                return <p className="header-option__text"
+                                    key={index}
+                                >{option.name}</p>
                             } else {
                                 return (
-                                    <Link to={option.route} className="header-option__link">
+                                    <Link to={option.route} className="header-option__link"
+                                        key={index}
+                                    >
                                         <a target="_blank" rel="noreferrer" className="header-option__link">{option.name}</a>                                        
                                     </Link>
                                 )
@@ -49,8 +54,9 @@ export default function Header({headerConfiguration}) {
                             if (option.route === undefined) {
                                 return (
                                     <button
+                                        key={index}
                                         className={
-                                            `header-option__button ${option.buttonType}`
+                                            `header-option__button ${option.buttonVariant}`
                                         }
                                     >
                                         {option.name}
@@ -58,10 +64,12 @@ export default function Header({headerConfiguration}) {
                                 )
                             } else {
                                 return (
-                                    <Link to={option.route}>
+                                    <Link to={option.route}
+                                        key={index}
+                                    >
                                         <button
                                             className={
-                                                `header-option__button ${option.buttonType}`
+                                                `header-option__button ${option.buttonVariant}`
                                             }
                                         >
                                             {option.name}
