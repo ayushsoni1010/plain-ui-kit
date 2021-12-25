@@ -24,7 +24,7 @@ const headerConfig = {
     textColor: 'black'
   },
   announcementBar: {
-    announcementText: `We recently raised our seed-funding. Learn more about our journey`,
+    announcementText: 'We recently raised our seed-funding. Learn more about our journey. LOL Just joking! :`)',
     textColor: 'white',
     backgroundColor: '#7900FF'
   }
