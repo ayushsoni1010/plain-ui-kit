@@ -1,4 +1,7 @@
+import { Route, Routes } from "react-router-dom"
 import Header from "./components/Header"
+import Input from "./components/Input"
+import Landing from "./pages/Landing"
 
 const headerConfig = {
   logo: {
@@ -31,6 +34,9 @@ export default function App() {
   return (
     <div className="app">
       <Header headerConfiguration={headerConfig} />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+      </Routes>
     </div>
   )
 }
