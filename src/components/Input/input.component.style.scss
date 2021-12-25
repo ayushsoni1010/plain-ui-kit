@@ -1,0 +1,32 @@
+
+.pu-input {
+    background-color: white;
+    padding: 10px 12px;
+    color: black;
+    border: 3px solid black;
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: 600;
+    &:focus {
+        outline: none;
+        border-color: var(--primary-theme-color);
+    }
+    &::placeholder {
+        font-family: inherit;
+        color: #b2b2b2;
+        font-weight: 500;
+        font-size: 14px;
+    }
+}
+
+.pu-input {
+    &__small {
+        width: 30%;
+    }
+    &__medium {
+        width: 60%;
+    }
+    &__large {
+        width: 100%;
+    }
+}

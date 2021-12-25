@@ -1,0 +1,41 @@
+.pu-input {
+  background-color: white;
+  padding: 10px 12px;
+  color: black;
+  border: 3px solid black;
+  border-radius: 6px;
+  font-family: inherit;
+  font-weight: 600;
+}
+.pu-input:focus {
+  outline: none;
+  border-color: var(--primary-theme-color);
+}
+.pu-input::-moz-placeholder {
+  font-family: inherit;
+  color: #b2b2b2;
+  font-weight: 500;
+  font-size: 14px;
+}
+.pu-input:-ms-input-placeholder {
+  font-family: inherit;
+  color: #b2b2b2;
+  font-weight: 500;
+  font-size: 14px;
+}
+.pu-input::placeholder {
+  font-family: inherit;
+  color: #b2b2b2;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.pu-input__small {
+  width: 30%;
+}
+.pu-input__medium {
+  width: 60%;
+}
+.pu-input__large {
+  width: 100%;
+}/*# sourceMappingURL=input.component.style.css.map */
