@@ -15,11 +15,28 @@ export default function Header({headerConfiguration}) {
         shadow: (headerConfiguration.themeConfig.shadow ? 'header-shadow' : 'NO_SHADOW'),
         textColor: headerConfiguration.themeConfig.textColor
     };
+    let announcementBarConfiguration = {
+        text: headerConfiguration.announcementBar.announcementText,
+        textColor: headerConfiguration.announcementBar.textColor,
+        backgroundColor: headerConfiguration.announcementBar.backgroundColor
+    };
     const [headerOptionsRef] = useState(headerConfiguration.options);
     console.log(logoData);
     console.log(styleConfiguration);
     return (
         <div className="header-container">
+            <div className="announcement-bar-wrapper"
+                style={{
+                    color: announcementBarConfiguration.textColor,
+                    backgroundColor: announcementBarConfiguration.backgroundColor,
+                    fontWeight: '600',
+                    textAlign: 'center',
+                    paddingTop: '2px',
+                    paddingBottom: '2px'
+                }}
+            >
+                {announcementBarConfiguration.text}
+            </div>
             <div className="header-content-wrapper"
                 style={{
                     color: styleConfiguration.textColor,
