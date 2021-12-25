@@ -29,9 +29,21 @@ export default function Header({headerConfiguration}) {
             >
                 <div className="logo-title-content-wrapper">
                     <React.Fragment>
-                        <img src={logoData.url} alt={logoData.title}
-                            className={`header-logo ` + `header-logo__${logoData.shape}`}
-                        />
+                        <Link to={logoData.route} style={{
+                            textDecoration: 'none'
+                        }}>
+                            <span style={{
+                                display: 'flex',
+                                flexDirection: 'row',
+                                alignItems: 'center',
+                                gap: '12px'
+                            }}>
+                                <img src={logoData.url} alt={logoData.title}
+                                    className={`header-logo ` + `header-logo__${logoData.shape}`}
+                                />
+                                <p className="header-title">{logoData.title}</p>
+                            </span>
+                        </Link>
                     </React.Fragment>
                 </div>
                 <div className="header-options-cta-container">
@@ -55,6 +67,7 @@ export default function Header({headerConfiguration}) {
                                 return (
                                     <button
                                         key={index}
+                                        style={{ textDecoration: 'none' }}
                                         className={
                                             `header-option__button ${option.buttonVariant}`
                                         }
@@ -65,6 +78,7 @@ export default function Header({headerConfiguration}) {
                             } else {
                                 return (
                                     <Link to={option.route}
+                                        style={{ textDecoration: 'none' }}
                                         key={index}
                                     >
                                         <button

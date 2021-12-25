@@ -9,16 +9,25 @@
     width: 100%;
     height: auto;
     > .header-content-wrapper {
+        padding-right: 1em;
+        padding-left: 1em;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
         display: grid;
         grid-template-columns: auto auto;
         align-items: center;
         justify-content: space-between;
         > .logo-title-content-wrapper {
-            > img.header-logo {
+            img.header-logo {
                width: 50px;
                height: auto;
             }
-            > img.header-logo__circle {
+            .header-title {
+                text-decoration: none;
+                font-weight: 600;
+                color: black;
+            }
+            img.header-logo__circle {
                 width: 50px;
                 height: auto;
                 border-radius: 50%;
