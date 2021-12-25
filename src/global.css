@@ -10,3 +10,7 @@
 body, html {
     font-family: 'Manrope', sans-serif;
 }
+
+:root {
+    --primary-theme-color: blue;
+}
