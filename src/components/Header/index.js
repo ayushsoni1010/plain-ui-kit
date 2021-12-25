@@ -75,7 +75,7 @@ export default function Header({headerConfiguration}) {
                                     <Link to={option.route} className="header-option__link"
                                         key={index}
                                     >
-                                        <a target="_blank" rel="noreferrer" className="header-option__link">{option.name}</a>                                        
+                                        <p target="_blank" rel="noreferrer" className="header-option__link">{option.name}</p>                                        
                                     </Link>
                                 )
                             }
