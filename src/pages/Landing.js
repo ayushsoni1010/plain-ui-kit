@@ -22,7 +22,7 @@ export default function Landing() {
             { type: 'link', name: 'Support Us' },
             { type: 'link', name: 'Discord' },
             { type: 'button', buttonVariant: 'button-outline', name: 'Login' },
-            { type: 'button', buttonVariant: 'button-solid' }
+            { type: 'button', buttonVariant: 'button-solid', name: 'Create an Account' }
         ],
         themeConfig: {
             backgroundColor: 'white',
