@@ -8,7 +8,8 @@ export default function Landing() {
                 <h1 style={{
                     fontSize: '46px',
                     width: '26ch',
-                    marginTop: '2.4em'
+                    marginTop: '2.4em',
+                    fontWeight: '900'
                 }}>Plain UI Kit is a concept design system, inspired from Figma</h1>
                 <div style={{
                     display: 'flex',
