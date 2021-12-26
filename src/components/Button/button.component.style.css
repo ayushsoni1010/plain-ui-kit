@@ -1,3 +1,47 @@
 .pu-button {
   text-align: center;
+}
+
+.pu-button__small {
+  width: var(--width-small);
+}
+.pu-button__medium {
+  width: var(--width-medium);
+}
+.pu-button__large {
+  width: var(--width-large);
+}
+
+.pu-button__solid {
+  background-color: black;
+  padding: 10px 12px;
+  color: white;
+  border: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.pu-button__solid:hover {
+  transform: translateY(-2px);
+}
+.pu-button__outline {
+  background-color: white;
+  padding: 10px 12px;
+  color: black;
+  text-decoration: none;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.pu-button__outline:hover {
+  transform: translateY(-4px);
 }/*# sourceMappingURL=button.component.style.css.map */
