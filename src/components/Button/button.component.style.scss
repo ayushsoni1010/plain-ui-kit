@@ -1,0 +1,54 @@
+
+.pu-button {
+  text-align: center;
+}
+
+// size class-methods
+.pu-button {
+  &__small {
+    width: var(--width-small);
+  }
+  &__medium {
+    width: var(--width-medium);
+  }
+  &__large {
+    width: var(--width-large);
+  }
+}
+
+// button variation class-methods
+.pu-button {
+  &__solid {
+    background-color: black;
+    padding: 10px 12px;
+    color: white;
+    border: 3px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  &__outline {
+    background-color: white;
+    padding: 10px 12px;
+    color: black;
+    text-decoration: none;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
