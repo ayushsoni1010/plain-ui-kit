@@ -1,3 +1,4 @@
+import Button from "../components/Button";
 import Input from "../components/Input";
 
 export default function Landing() {
@@ -18,7 +19,7 @@ export default function Landing() {
                 }}>
                     <Input placeholder="This is just a random email input" type="email" size="small"
                     />
-                    <button className="button-solid">Join Now! Idk why</button>
+                    <Button value="Join Now, IDK why" />
                 </div>
             </div>
         </div>

@@ -13,43 +13,9 @@ body, html {
 
 :root {
     --primary-theme-color: #7900FF;
-}
-
-.button-solid {
-    background-color: black;
-    padding: 10px 12px;
-    color: white;
-    border: 3px solid transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-}
-
-.button-solid:hover {
-    transform: translateY(-4px);
-}
-
-.button-outline {
-    background-color: white;
-    padding: 10px 12px;
-    color: black;
-    text-decoration: none;
-    border: 3px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-}
-
-.button-outline:hover {
-    transform: translateY(-4px);
+    --width-small: 30%;
+    --width-mediun: 60%;
+    --large-medium: 100%;
 }
 
 /* page content center utility */

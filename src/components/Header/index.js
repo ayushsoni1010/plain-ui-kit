@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Button from '../Button';
 import './header.component.style.css';
 
 export default function Header({headerConfiguration}) {
@@ -82,15 +83,10 @@ export default function Header({headerConfiguration}) {
                         } else if (option.type === 'button') {
                             if (option.route === undefined) {
                                 return (
-                                    <button
-                                        key={index}
-                                        style={{ textDecoration: 'none' }}
-                                        className={
-                                            `header-option__button ${option.buttonVariant}`
-                                        }
-                                    >
-                                        {option.name}
-                                    </button>
+                                    <Button
+                                        value={option.name}
+                                        variant={checkButtonVariantType(option.buttonVariant)}
+                                    />
                                 )
                             } else {
                                 return (
@@ -98,13 +94,10 @@ export default function Header({headerConfiguration}) {
                                         style={{ textDecoration: 'none' }}
                                         key={index}
                                     >
-                                        <button
-                                            className={
-                                                `header-option__button ${option.buttonVariant}`
-                                            }
-                                        >
-                                            {option.name}
-                                        </button>
+                                        <Button
+                                            value={option.name}
+                                            variant={checkButtonVariantType(option.buttonVariant)}
+                                        />
                                     </Link>
                                 )
                             }
@@ -115,3 +108,11 @@ export default function Header({headerConfiguration}) {
         </div>
     )
 }
+
+function checkButtonVariantType(variantType) {
+    if (variantType === 'button-outline') {
+        return "outline"
+    } else {
+        return "solid"
+    }
+} 
