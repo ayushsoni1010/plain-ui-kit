@@ -1,7 +1,7 @@
-import { Route, Routes } from "react-router-dom"
-import Header from "./components/Header"
-import Input from "./components/Input"
-import Landing from "./pages/Landing"
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import Input from "./components/Input";
+import Landing from "./pages/Landing";
 
 export default function App() {
   return (
@@ -10,5 +10,5 @@ export default function App() {
         <Route path="/" element={<Landing />} />
       </Routes>
     </div>
-  )
+  );
 }

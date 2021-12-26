@@ -1,5 +1,5 @@
 :root {
-  --header-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+  --header-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
@@ -18,16 +18,25 @@
   align-items: center;
   justify-content: space-between;
 }
-.header-container > .header-content-wrapper > .logo-title-content-wrapper img.header-logo {
+.header-container
+  > .header-content-wrapper
+  > .logo-title-content-wrapper
+  img.header-logo {
   width: 50px;
   height: auto;
 }
-.header-container > .header-content-wrapper > .logo-title-content-wrapper .header-title {
+.header-container
+  > .header-content-wrapper
+  > .logo-title-content-wrapper
+  .header-title {
   text-decoration: none;
   font-weight: 600;
   color: black;
 }
-.header-container > .header-content-wrapper > .logo-title-content-wrapper img.header-logo__circle {
+.header-container
+  > .header-content-wrapper
+  > .logo-title-content-wrapper
+  img.header-logo__circle {
   width: 50px;
   height: auto;
   border-radius: 50%;
@@ -39,19 +48,31 @@
   justify-content: flex-start;
   gap: 1.2em;
 }
-.header-container > .header-content-wrapper > .header-options-cta-container > .header-option__text {
+.header-container
+  > .header-content-wrapper
+  > .header-options-cta-container
+  > .header-option__text {
   color: inherit;
   text-decoration: none;
   font-weight: 600;
 }
-.header-container > .header-content-wrapper > .header-options-cta-container > .header-option__text:hover {
+.header-container
+  > .header-content-wrapper
+  > .header-options-cta-container
+  > .header-option__text:hover {
   color: var(--primary-theme-color);
 }
-.header-container > .header-content-wrapper > .header-options-cta-container .header-option__link {
+.header-container
+  > .header-content-wrapper
+  > .header-options-cta-container
+  .header-option__link {
   color: black;
   text-decoration: none;
   font-weight: 600;
 }
-.header-container > .header-content-wrapper > .header-options-cta-container .header-option__link:hover {
+.header-container
+  > .header-content-wrapper
+  > .header-options-cta-container
+  .header-option__link:hover {
   color: var(--primary-theme-color);
-}/*# sourceMappingURL=header.component.style.css.map */
+} /*# sourceMappingURL=header.component.style.css.map */
