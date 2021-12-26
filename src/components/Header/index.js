@@ -22,8 +22,6 @@ export default function Header({headerConfiguration}) {
         backgroundColor: headerConfiguration.announcementBar.backgroundColor
     });
     const [headerOptionsRef] = useState(headerConfiguration.options);
-    console.log(logoData);
-    console.log(styleConfiguration);
     return (
         <div className="header-container">
             <div className="announcement-bar-wrapper"
