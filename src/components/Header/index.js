@@ -4,23 +4,23 @@ import Button from '../Button';
 import './header.component.style.css';
 
 export default function Header({headerConfiguration}) {
-    let logoData = {
+    const [logoData] = useState({
         url: headerConfiguration.logo.imgURL,
         title: headerConfiguration.logo.title,
         route: headerConfiguration.logo.route,
         className: (headerConfiguration.logo.className ? headerConfiguration.logo.className : ''),
         shape: (headerConfiguration.logo.logoShape ? headerConfiguration.logo.logoShape : '')
-    };
-    let styleConfiguration = {
+    })
+    const [styleConfiguration] = useState({
         backgroundColor: headerConfiguration.themeConfig.backgroundColor,
         shadow: (headerConfiguration.themeConfig.shadow ? 'header-shadow' : 'NO_SHADOW'),
         textColor: headerConfiguration.themeConfig.textColor
-    };
-    let announcementBarConfiguration = {
+    });
+    const [announcementBarConfiguration] = useState({
         text: headerConfiguration.announcementBar.announcementText,
         textColor: headerConfiguration.announcementBar.textColor,
         backgroundColor: headerConfiguration.announcementBar.backgroundColor
-    };
+    });
     const [headerOptionsRef] = useState(headerConfiguration.options);
     console.log(logoData);
     console.log(styleConfiguration);
